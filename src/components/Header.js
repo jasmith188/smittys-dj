@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Container, Dropdown } from 'semantic-ui-react';
+import { Menu, Container, Dropdown, Image } from 'semantic-ui-react';
 
 const Header = () => {
   return (
@@ -7,20 +7,20 @@ const Header = () => {
       <Menu fixed="top" inverted>
         <Container>
           <Menu.Item>
-            {/* <Image
+            <Image
               size="mini"
               src="/logo.png"
               style={{ marginRight: '1.5em' }}
-            /> */}
+            />
             Smitty's DJ
           </Menu.Item>
           <Menu.Item>Home</Menu.Item>
           <Menu.Item>About</Menu.Item>
-          <Dropdown item simple text="Dropdown">
+          <Dropdown item simple text="More">
             <Dropdown.Menu>
               <Dropdown.Item>List Item</Dropdown.Item>
               <Dropdown.Item>List Item</Dropdown.Item>
-              <Dropdown.Divider />
+              {/* <Dropdown.Divider />
               <Dropdown.Header>Header Item</Dropdown.Header>
               <Dropdown.Item>
                 <i className="dropdown icon" />
@@ -30,7 +30,7 @@ const Header = () => {
                   <Dropdown.Item>List Item</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown.Item>
-              <Dropdown.Item>List Item</Dropdown.Item>
+              <Dropdown.Item>List Item</Dropdown.Item> */}
             </Dropdown.Menu>
           </Dropdown>
         </Container>
